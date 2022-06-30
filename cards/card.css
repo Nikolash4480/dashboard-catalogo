@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.card {
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	margin: 50px;
+	overflow: hidden;
+	width: 300px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; 
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card h2 {
+	letter-spacing: 1px;
+}
+
+.card-title {
+	background-color: #2A265F;
+	color: #fff;
+	padding: 24px;
+	max-width: 240px;
+}
+
+.card-title h2 {
+	position:relative;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+.card-title h3 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+.card-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+	color: #14213d;
+	text-decoration: none;
+}
+.card-display {
+	justify-content: flex-start;
+}
+.card-display i {
+	display: inline;
+}
+.card:hover .card-display {
+	display: none;
+}
+
+.card .card-hover {
+	display: none;
+}
+
+.card-info:hover .card-hover{
+    transform: scale(1.4);
+    position: absolute;
+	display: block;
+}
+
+.card-hover img {
+	left: 0;
+	top: 0;
+    position: absolute;
+    align-items: center;
+    width: 100px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    transition: all 1s;
+}
+.card .card-info .card-hover:hover .hover-hover{
+	top: 0;
+	left: 0;
+}
+.btn {
+	border: 0;
+	border-radius: 30px;
+	color: #2A265F;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	letter-spacing: 1px;
+}
