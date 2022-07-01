@@ -18,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     position: relative; 
     flex-flow: wrap;
@@ -28,6 +29,7 @@ body {
 	min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
+
 main {
     margin: 0;
     min-height: 100vh;
@@ -35,24 +37,33 @@ main {
     background: #addbf8;
     display: flex;
 }
+
 .dashboard {
     width: 80%;
 }
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 350px);
     grid-auto-rows: minmax(100px, auto);
 }
+
 .diary {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    position: sticky;
     text-align: center;
     height: 100vh;
     background: linear-gradient(45deg, var(--light-blue), var(--DarkBlue) );
     border-radius: 20px 0 0 20px;
     box-shadow: 5px 0 0 -5px rgba(0,0,0,0.5);
 }
+
 .diary .title {
     margin-top: 20px;
-    color:#457b9d;
+    color:#ffffff;
 }
 
 .cont_photo {

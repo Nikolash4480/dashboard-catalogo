@@ -15,6 +15,9 @@
 
 .card:hover {
     transform: scale(1.2);
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; 
 }
 
 .card h2 {
@@ -25,7 +28,7 @@
 	background-color: #2A265F;
 	color: #fff;
 	padding: 24px;
-	max-width: 240px;
+	max-height: 240px;
 }
 
 .card-title h2 {
@@ -48,45 +51,85 @@
 .card-info {
 	padding: 30px;
 	position: relative;
-	width: 100%;
 	color: #14213d;
 	text-decoration: none;
 }
-.card-display {
-	justify-content: flex-start;
-}
-.card-display i {
+
+.card-info .card-display {
 	display: inline;
+	justify-content: center;
+}
+
+.card-info .card-display i {
+    position: absolute;
+    color: var(--DarkBlue);
+    left: 10px;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+.card-info .card-display h3 {
+	justify-content: center;
+	margin-left: 10px;
 }
 .card:hover .card-display {
 	display: none;
 }
 
-.card .card-hover {
+.card .card-info .card-hover {
 	display: none;
 }
 
-.card-info:hover .card-hover{
-    transform: scale(1.4);
+.card:hover .card-info .card-hover{
+	left: 0;
+	top: 0;
+    transform: scale(1.6);
     position: absolute;
 	display: block;
+	-o-transition: all 0.5s;
+    transition: all 0.5s;
+    transition: all 1s;
 }
 
+.card:hover .card-info .card-hover:hover {
+	transform: scale(1.9);
+	-o-transition: all 0.5s;
+    transition: all 0.5s;
+    transition: all 1s;
+}
+
+.card:hover .card-hover:hover .card-info {
+	margin: 0;
+}
+.card:hover .card-hover .hover-hover {
+	display: none;
+}
+.card:hover .card-hover:hover .hover-hover {
+	display: block;
+	position: absolute;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	font-size: 14px;
+}
+
+.card-hover:hover::before {
+	opacity: 1;
+}
+
+.card:hover .card-hover:hover .card-title {
+	display: none;
+}
 .card-hover img {
 	left: 0;
 	top: 0;
     position: absolute;
     align-items: center;
-    width: 100px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    transition: all 1s;
+    width: 140px;
+
 }
-.card .card-info .card-hover:hover .hover-hover{
-	top: 0;
-	left: 0;
-}
+
 .btn {
 	border: 0;
 	border-radius: 30px;
