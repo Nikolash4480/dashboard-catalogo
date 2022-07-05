@@ -15,9 +15,6 @@
 
 .card:hover {
     transform: scale(1.2);
-	-webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; 
 }
 
 .card h2 {
@@ -73,6 +70,7 @@
 	justify-content: center;
 	margin-left: 10px;
 }
+
 .card:hover .card-display {
 	display: none;
 }
@@ -121,13 +119,13 @@
 .card:hover .card-hover:hover .card-title {
 	display: none;
 }
+
 .card-hover img {
 	left: 0;
 	top: 0;
     position: absolute;
     align-items: center;
     width: 140px;
-
 }
 
 .btn {
