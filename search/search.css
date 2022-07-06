@@ -6,7 +6,7 @@
 }
 
 .search .search-input {
-    padding: 12px 24px;
+    padding: 12px 50px;
     background-color: transparent;
     transition: transform 250ms ease-in-out;
     font-size: 14px;

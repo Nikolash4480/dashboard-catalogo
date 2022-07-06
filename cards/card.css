@@ -104,15 +104,19 @@
 	display: none;
 }
 .card:hover .card-hover:hover .hover-hover {
-	display: block;
+	top: 20px;
+	display: flex;
 	position: absolute;
 	text-align: center;
-	justify-content: center;
-	justify-items: center;
-	font-size: 14px;
+	font-size: 8px;
+	color: var(--white);
+	text-decoration: none;
+	background: var(--DarkFull);
+	opacity: 1;
+	border-radius: 2px;
 }
 
-.card-hover:hover::before {
+.card:hover .card-hover:hover::after {
 	opacity: 1;
 }
 
@@ -128,6 +132,7 @@
     width: 140px;
 }
 
+/* 
 .btn {
 	border: 0;
 	border-radius: 30px;
@@ -138,4 +143,4 @@
 	bottom: 10px;
 	right: 10px;
 	letter-spacing: 1px;
-}
+} */

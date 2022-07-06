@@ -51,7 +51,7 @@ main {
       'header header header diary'
       'dashboard dashboard dashboard diary'
       'dashboard dashboard dashboard diary';
-    gap: 10px;
+    column-gap: 10px;
 }
 
 .drop1 { grid-area: drop1; }
@@ -85,7 +85,6 @@ main {
     position: fixed;
     text-align: center;
     flex-direction: column;
-    text-align: center;
     height: 100vh;
     background:  var(--DarkBlue) ;
     border-radius: 20px 0 0 20px;
