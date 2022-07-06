@@ -54,12 +54,21 @@ main {
     gap: 10px;
 }
 
+.drop1 { grid-area: drop1; }
+.drop2 { grid-area: drop2; }
+.search { grid-area: search; }
+
 .header {
    position: sticky;
-   display: flex; 
    width: 100%;
    justify-content: center;
+   align-items: center;
+   display: grid; 
+   grid-template-areas: 
+   'drop1 drop2 search';
+   gap: 5px;
 }
+
 .dashboard {
     display: flex;
     width: 100%;
@@ -72,11 +81,10 @@ main {
 }
 
 .diary {
+    right: 0;
+    position: fixed;
     text-align: center;
-    display: flex;
     flex-direction: column;
-    padding: 24px;
-    position: static;
     text-align: center;
     height: 100vh;
     background:  var(--DarkBlue) ;
@@ -85,7 +93,7 @@ main {
 }
 
 .diary .title {
-    margin-top: 20px;
+    margin-top: 40px;
     color:#ffffff;
 }
 
